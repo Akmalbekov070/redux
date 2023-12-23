@@ -1,8 +1,8 @@
 const { combineReducers } = require('redux');
 import postReducer from '@/redux/redux';
 
-const rootReducer = combineReducers({
+const rootRedysers = combineReducers({
 	postReducer,
 });
 
-export default rootReducer;
+export default rootRedysers;

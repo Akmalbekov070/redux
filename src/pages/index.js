@@ -1,7 +1,10 @@
-import Image from 'next/image';
-import { Inter } from 'next/font/google';
-import Main from '@/components/main';
+import Main from '@/components/Main/main';
 
 export default function Home() {
-	return <Main />;
+	return (
+		<>
+			salom
+			{/* <Main /> */}
+		</>
+	);
 }
