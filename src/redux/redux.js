@@ -4,7 +4,7 @@ const initialState = {
 	posts: [],
 	loadingStatus: 'default',
 };
-const postSclise = createSlice({
+const postSlise = createSlice({
 	name: 'post',
 	initialState,
 	reducers: {
@@ -17,6 +17,6 @@ const postSclise = createSlice({
 		},
 	},
 });
-export const {} = postSclise.actions;
-const postReducer = postSclise.reducer;
+export const { fetchingPost, fetchedPost } = postSlise.actions;
+const postReducer = postSlise.reducer;
 export default postReducer;
