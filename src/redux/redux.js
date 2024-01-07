@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
 	posts: [],
 	loadingStatus: 'default',
+	basket: [],
 };
 const postSlise = createSlice({
 	name: 'post',
@@ -15,8 +16,11 @@ const postSlise = createSlice({
 			state.posts = action.payload;
 			state.loadingStatus = 'default';
 		},
+		addBacket: (state, action) => {
+			state.basket.unshift(action.payload);
+		},
 	},
 });
-export const { fetchingPost, fetchedPost } = postSlise.actions;
+export const { fetchingPost, fetchedPost, addBacket } = postSlise.actions;
 const postReducer = postSlise.reducer;
 export default postReducer;
